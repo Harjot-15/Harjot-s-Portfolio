@@ -156,7 +156,7 @@ main {
     display: flex;
     width:350px;
     gap: 20px;
-    background-color: #9d9d9d;
+    background-color: #e1e1e1;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -164,7 +164,7 @@ main {
 }
 
 .dark-mode .link-container {
-    background-color: #181818;
+    background-color: #222222;
 }
 
 .profile-link {
