@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Harjot Singh - Home</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#home">Harjot Singh</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="Resume/resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+    <header class="hero-banner">
+        <div class="container text-center">
+            <h1>Welcome to Harjot Singh's Portfolio</h1>
+            <div id="dynamic-skills">
+                <!-- Dynamic skills will be populated here by JavaScript -->
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section text-white text-center p-20 bg-cover bg-center" style="background-image: url('Images/M 9.jpg');">
+        <h1 class="text-5xl font-bold mb-4">Harjot Singh</h1>
+        <p class="text-2xl mb-6">Visual Media Creator | Graphic Designer | Content Writer</p>
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+    </section>
+
+  <section id="portfolio" class="portfolio-section p-20">
+      <h2 class="text-4xl font-bold text-center mb-6">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="portfolio-item fade-in element-3d">
+            
+              <img src="Images/M 17.jpg" alt="Work 1" class="animated-image">
+              <h3 class="text-xl font-bold mt-2">Project Title 1</h3>
+              <p>Project Description 1</p>
+          </div>
+          <div class="portfolio-item fade-in element-3d">
+              <img src="Images/ButterFly.jpg" alt="Work 2" class="animated-image">
+              <h3 class="text-xl font-bold mt-2">Project Title 2</h3>
+              <p>Project Description 2</p>
+          </div>
+          <div class="portfolio-item fade-in element-3d">
+              <img src="Images/M 12.jpg" alt="Work 3" class="animated-image">
+              <h3 class="text-xl font-bold mt-2">Project Title 3</h3>
+              <p>Project Description 3</p>
+          </div>
+      </div>
+  </section>
+
+    <section id="about" class="about-section p-20 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center mb-6">About Me</h2>
+        <div class="text-center max-w-2xl mx-auto">
+            <p>I am a passionate Visual Media Creator with over 5 years of experience in graphic design and content creation...</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section p-20">
+        <h2 class="text-4xl font-bold text-center mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="skill-bar bg-blue-500" data-level="90" style="width: 90%;">Photoshop</div>
+            <!-- Repeat for more skills -->
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section p-20 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center mb-6">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3 class="text-xl font-bold">Job Title 1</h3>
+                <p class="text-gray-600">Company Name 1 - Duration 1</p>
+                <p>Job Description 1</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-bold">Job Title 2</h3>
+                <p class="text-gray-600">Company Name 2 - Duration 2</p>
+                <p>Job Description 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section p-20">
+        <h2 class="text-4xl font-bold text-center mb-6">Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="education-item">
+                <h3 class="text-xl font-bold">Degree or Program 1</h3>
+                <p class="text-gray-600">Institution 1 - Year 1</p>
+            </div>
+            <div class="education-item">
+                <h3 class="text-xl font-bold">Degree or Program 2</h3>
+                <p class="text-gray-600">Institution 2 - Year 2</p>
+            </div>
+        </div>
+    </section>
+
+        <section id="contact" class="contact-section">
+          <div class="container">
+          <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form-container">
+              <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+              <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+              <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+              <button type="submit" class="submit-button">Send Message</button>
+          </form>
+      </div>
+  </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
