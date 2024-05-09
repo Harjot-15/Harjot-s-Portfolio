@@ -156,11 +156,15 @@ main {
     display: flex;
     width:350px;
     gap: 20px;
-    background: none; /* Set background to none */
+    background-color: #9d9d9d;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
     transition: transform 0.3s ease;
+}
+
+.dark-mode .link-container {
+    background-color: #181818;
 }
 
 .profile-link {
