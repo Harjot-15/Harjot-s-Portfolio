@@ -154,8 +154,8 @@ main {
 
 .link-container {
     display: flex;
-    width:450px;
-    gap: 20px;
+    width:480px;
+    gap: 12px;
     background-color: #e1e1e1;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
